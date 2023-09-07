@@ -1,0 +1,8 @@
+ <label for="" class="my-1">{{title}} :</label>
+    <select  class="form-control" (change)="det($event)" >
+      <option value="All">All</option>
+      <ng-container *ngFor="let item of data">
+        <option [value]="item">{{item}}</option>
+      </ng-container>
+
+    </select>
